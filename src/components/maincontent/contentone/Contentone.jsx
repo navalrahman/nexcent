@@ -17,7 +17,8 @@ const Contentone = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/api/mainthumbnail')
+            // const response = await axios.get('http://localhost:9000/api/mainthumbnail')
+            const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/mainthumbnail')
             // console.log('fetchdata', response);
             setData(response.data.data)
 
