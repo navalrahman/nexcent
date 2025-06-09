@@ -65,7 +65,8 @@ const Contenttwo = () => {
 
     const fetchLogos = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/api/logos');
+            // const response = await axios.get('http://localhost:9000/api/logos');
+            const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/logos')
             // console.log(response.data);
 
             setLogos(response.data.data);
@@ -76,7 +77,8 @@ const Contenttwo = () => {
 
     const fetchRightIcon = async () => {
         try {
-            const result = await axios.get('http://localhost:9000/api/right')
+            // const result = await axios.get('http://localhost:9000/api/right')
+            const result = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/right')
             setIcons(result.data.data)
             // console.log(result.data.data);
 
@@ -87,7 +89,8 @@ const Contenttwo = () => {
 
     const fetchAssociationDetails = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/api/association')
+            // const response = await axios.get('http://localhost:9000/api/association')
+            const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/association')
             // console.log(response.data.data);
             setAssociation(response.data.data)
         } catch (error) {
@@ -98,7 +101,8 @@ const Contenttwo = () => {
 
     const fetchSecondThumbnailDetails = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/api/secondthumbnail')
+            // const response = await axios.get('http://localhost:9000/api/secondthumbnail')
+            const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/fdrcondthumbnail')
             // console.log(response.data.data);
             setSecondThumbnail(response.data.data)
         } catch (error) {
@@ -108,8 +112,9 @@ const Contenttwo = () => {
 
     const fetchThirdThumbnailDetails = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/api/thirdthumbnail')
-            console.log(response.data.data);
+            // const response = await axios.get('http://localhost:9000/api/thirdthumbnail')
+            const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/thirdthumbnail')
+            // console.log(response.data.data);
             setThirdThumbnail(response.data.data)
         } catch (error) {
             console.log("Error fetching details:", error);
@@ -118,8 +123,9 @@ const Contenttwo = () => {
 
     const fetchFourthThumbnailDetails = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/api/fourththumbnail')
-            console.log(response.data.data);
+            // const response = await axios.get('http://localhost:9000/api/fourththumbnail')
+            const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/fourththumbnail')
+            // console.log(response.data.data);
             setFourthThumbnail(response.data.data)
         } catch (error) {
             console.log("Error fetching details:", error);
@@ -128,8 +134,9 @@ const Contenttwo = () => {
 
     const fetchImagesAndDetails = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/api/images')
-            console.log(response.data.data);
+            // const response = await axios.get('http://localhost:9000/api/images')
+            const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/images')
+            // console.log(response.data.data);
             setImagesAndDetails(response.data.data)
         } catch (error) {
             console.log("Error fetching details:", error);
@@ -140,8 +147,9 @@ const Contenttwo = () => {
 
     const fetchLogosAndDetails = async () => {
         try {
-            const response = await axios.get('http://localhost:9000/api/getlogosimage')
-            console.log(response.data.data);
+            // const response = await axios.get('http://localhost:9000/api/getlogosimage')
+            const response = await axios.get('https://nexcent-backend-4vbo.onrender.com/api/getlogosimage')
+            // console.log(response.data.data);
             setLogosAndDetails(response.data.data)
         } catch (error) {
             console.log("Error fetching details:", error);
